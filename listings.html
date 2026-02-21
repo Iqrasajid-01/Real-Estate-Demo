@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Listings | Premium Estates</title>
+  <meta name="description" content="Browse our extensive collection of luxury properties for sale and rent.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🏠</div>
+        <span class="logo-text">Premium Estates</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listings.html">Properties</a></li>
+        <li><a href="listings.html">Buy</a></li>
+        <li><a href="listings.html">Rent</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="about.html#contact">Contact</a></li>
+      </ul>
+      
+      <div class="nav-buttons">
+        <button class="btn btn-ghost">Sign In</button>
+        <a href="about.html#contact" class="btn btn-primary">Get Started</a>
+      </div>
+      
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Property Listings</h1>
+      <p>Discover your perfect property from our extensive collection</p>
+    </div>
+  </section>
+
+  <!-- Listings Section -->
+  <section class="listings-section">
+    <div class="container">
+      <!-- Toolbar -->
+      <div class="listings-toolbar">
+        <div class="filter-group">
+          <button class="filter-btn active">All</button>
+          <button class="filter-btn">For Sale</button>
+          <button class="filter-btn">For Rent</button>
+          <button class="filter-btn">New Listings</button>
+          <button class="filter-btn">Price Reduced</button>
+        </div>
+        
+        <div class="filter-group">
+          <select class="filter-btn" style="cursor: pointer;">
+            <option>Sort: Featured</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Newest First</option>
+            <option>Largest First</option>
+          </select>
+          
+          <div class="view-toggle">
+            <button class="view-btn active">▦</button>
+            <button class="view-btn">☰</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Properties Grid -->
+      <div class="properties-grid">
+        <!-- Property Card 1 -->
+        <div class="property-card">
+          <div class="property-image">
+            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&h=600&fit=crop" alt="Modern Luxury Villa">
+            <span class="property-badge">For Sale</span>
+            <button class="property-wishlist">♡</button>
+          </div>
+          <div class="property-content">
+            <div class="property-price">$1,250,000</div>
+            <h3 class="property-title">Modern Luxury Villa</h3>
+            <p class="property-location">📍 Beverly Hills, California</p>
+            <div class="property-features">
+              <span class="property-feature">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/></svg>
+                5 Beds
+              </span>
+              <span class="property-feature">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"/></svg>
+                4 Baths
+              </span>
+              <span class="property-feature">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"/></svg>
+                4,500 sqft
+              </span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Property Card 2 -->
+        <div class="property-card">
+          <div class="property-image">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop" alt="Downtown Penthouse">
+            <span class="property-badge" style="background: #38a169;">For Rent</span>
+            <button class="property-wishlist">♡</button>
+          </div>
+          <div class="property-content">
+            <div class="property-price">$4,500/mo</div>
+            <h3 class="property-title">Downtown Penthouse</h3>
+            <p class="property-location">📍 Manhattan, New York</p>
+            <div class="property-features">
+              <span class="property-feature">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/></svg>
+                3 Beds
+              </span>
+              <span class="property-feature">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"/></svg>
+                3 Baths
+              </span>
+              <span class="property-feature">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"/></svg>
+                2,800 sqft
+              </span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Property Card 3 -->
+        <div class="property-card">
+          <div class="property-image">
+            <img src="https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?w=800&h=600&fit=crop" alt="Waterfront Condo">
+            <span class="property-badge">For Sale</span>
+            <button class="property-wishlist">♡</button>
+          </div>
+          <div class="property-content">
+            <div class="property-price">$875,000</div>
+            <h3 class="property-title">Waterfront Condo</h3>
+            <p class="property-location">📍 Miami Beach, Florida</p>
+            <div class="property-features">
+              <span class="property-feature">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/></svg>
+                2 Beds
+              </span>
+              <span class="property-feature">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"/></svg>
+                2 Baths
+              </span>
+              <span class="property-feature">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"/></svg>
+                1,650 sqft
+              </span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Property Card 4 -->
+        <div class="property-card">
+          <div class="property-image">
+            <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&h=600&fit=crop" alt="Executive Estate">
+            <span class="property-badge">For Sale</span>
+            <button class="property-wishlist">♡</button>
+          </div>
+          <div class="property-content">
+            <div class="property-price">$2,100,000</div>
+            <h3 class="property-title">Executive Estate</h3>
+            <p class="property-location">📍 Aspen, Colorado</p>
+            <div class="property-features">
+              <span class="property-feature">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/></svg>
+                6 Beds
+              </span>
+              <span class="property-feature">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"/></svg>
+                5 Baths
+              </span>
+              <span class="property-feature">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"/></svg>
+                6,200 sqft
+              </span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Property Card 5 -->
+        <div class="property-card">
+          <div class="property-image">
+            <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&h=600&fit=crop" alt="Garden Apartment">
+            <span class="property-badge" style="background: #38a169;">For Rent</span>
+            <button class="property-wishlist">♡</button>
+          </div>
+          <div class="property-content">
+            <div class="property-price">$3,200/mo</div>
+            <h3 class="property-title">Garden Apartment</h3>
+            <p class="property-location">📍 San Francisco, California</p>
+            <div class="property-features">
+              <span class="property-feature">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/></svg>
+                2 Beds
+              </span>
+              <span class="property-feature">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"/></svg>
+                2 Baths
+              </span>
+              <span class="property-feature">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"/></svg>
+                1,400 sqft
+              </span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Property Card 6 -->
+        <div class="property-card">
+          <div class="property-image">
+            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=600&fit=crop" alt="Suburban Family Home">
+            <span class="property-badge">For Sale</span>
+            <button class="property-wishlist">♡</button>
+          </div>
+          <div class="property-content">
+            <div class="property-price">$695,000</div>
+            <h3 class="property-title">Suburban Family Home</h3>
+            <p class="property-location">📍 Austin, Texas</p>
+            <div class="property-features">
+              <span class="property-feature">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/></svg>
+                4 Beds
+              </span>
+              <span class="property-feature">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"/></svg>
+                3 Baths
+              </span>
+              <span class="property-feature">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"/></svg>
+                2,900 sqft
+              </span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Property Card 7 -->
+        <div class="property-card">
+          <div class="property-image">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop" alt="Hillside Mansion">
+            <span class="property-badge">For Sale</span>
+            <button class="property-wishlist">♡</button>
+          </div>
+          <div class="property-content">
+            <div class="property-price">$3,450,000</div>
+            <h3 class="property-title">Hillside Mansion</h3>
+            <p class="property-location">📍 Hollywood Hills, California</p>
+            <div class="property-features">
+              <span class="property-feature">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/></svg>
+                7 Beds
+              </span>
+              <span class="property-feature">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"/></svg>
+                6 Baths
+              </span>
+              <span class="property-feature">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"/></svg>
+                8,500 sqft
+              </span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Property Card 8 -->
+        <div class="property-card">
+          <div class="property-image">
+            <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&h=600&fit=crop" alt="Cozy Starter Home">
+            <span class="property-badge" style="background: #e53e3e;">New</span>
+            <button class="property-wishlist">♡</button>
+          </div>
+          <div class="property-content">
+            <div class="property-price">$550,000</div>
+            <h3 class="property-title">Cozy Starter Home</h3>
+            <p class="property-location">📍 Portland, Oregon</p>
+            <div class="property-features">
+              <span class="property-feature">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/></svg>
+                3 Beds
+              </span>
+              <span class="property-feature">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"/></svg>
+                2 Baths
+              </span>
+              <span class="property-feature">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"/></svg>
+                1,800 sqft
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Pagination -->
+      <div class="pagination">
+        <button class="page-btn">←</button>
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn">4</button>
+        <button class="page-btn">...</button>
+        <button class="page-btn">12</button>
+        <button class="page-btn">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">🏠</div>
+            <span class="logo-text">Premium Estates</span>
+          </a>
+          <p>Your trusted partner in finding the perfect property. With over 25 years of experience, we're committed to helping you achieve your real estate goals.</p>
+          <div class="social-links">
+            <a href="#" class="social-link">f</a>
+            <a href="#" class="social-link">t</a>
+            <a href="#" class="social-link">in</a>
+            <a href="#" class="social-link">ig</a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="listings.html">Properties</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Property Types</h4>
+          <ul>
+            <li><a href="listings.html">Houses</a></li>
+            <li><a href="listings.html">Apartments</a></li>
+            <li><a href="listings.html">Condos</a></li>
+            <li><a href="listings.html">Commercial</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Market Reports</a></li>
+            <li><a href="#">Mortgage Calculator</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Premium Estates. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
